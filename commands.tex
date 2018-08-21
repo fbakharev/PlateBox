@@ -1,0 +1,286 @@
+\renewcommand{\theequation}{\thesubsection.\arabic{equation}}
+%\renewcommand{\theequation}{\arabic{equation}}
+\numberwithin{equation}{section}
+%\renewcommand{\thefigure}{\arabic{figure}}
+\numberwithin{figure}{section}
+
+
+%% \swapnumbers
+%%
+%%  ADVANCED NUMBERING OF THEOREMS:
+%%
+\theoremstyle{plain}
+\newtheorem{theorem}{ Теорема}[section]
+\newtheorem{proposition}[theorem]{ Предложение}
+\newtheorem{lemma}[theorem]{ Лемма}
+\newtheorem{corollary}[theorem]{ Следствие}
+\newtheorem{example}[theorem]{ Пример}
+\newtheorem{remark}[theorem]{ Замечание}
+\newtheorem{definition}[theorem]{ Определение}
+\newtheorem{conjecture}{ Гипотеза}
+
+
+
+%%
+%%  ELEMENTARY NUMBERING OF THEOREMS:
+%%
+%\theoremstyle{plain}
+%\newtheorem{theorem}{\sffamily Theorem}
+%\newtheorem{proposition}{\sffamily Proposition}
+%\newtheorem{lemma}{\sffamily Lemma}
+%\newtheorem{corollary}{\sffamily Corollary}
+%\newtheorem{example}{\sffamily Example}
+%\newtheorem{remark}{\sffamily Remark}
+%\newtheorem{definition}{\sffamily Definition}
+%\newtheorem{conjecture}{\sffamily Conjecture}
+
+\def\partialroof{{\sc Proof}%\quad 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% To mark the end of the proofs or remarks use
+%% the following command
+%%
+\def\qed{\quad{$\blacksquare$}\medskip }
+%% or
+\def\qedo{\quad{$\square$}\medskip }
+
+
+\def\BET{\begin{theorem}}
+\def\ENT{\end{theorem}}
+\def\BEP{\begin{proposition}}
+\def\ENP{\end{proposition}}
+\def\BEL{\begin{lemma}}
+\def\ENL{\end{lemma}}
+\def\BEC{\begin{corollary}}
+\def\ENC{\end{corollary}}
+\def\BEE{\begin{example} \rm}
+\def\ENE{\end{example}}
+\def\BER{\begin{remark} \rm}
+\def\ENR{\end{remark}}
+\def\BED{\begin{definition} \rm}
+\def\END{\end{definition}}
+\def\BECJ{\begin{conjecture}}
+\def\ENCJ{\end{conjecture}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% KAAVOJA VARTEN:       
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+
+\def\beal{\begin{align*}}
+
+\def\eeal{ \end{align*} }
+
+%
+% RIVINVAIHTO KAAVASSA BEA/EEA
+%
+
+% \def\rivi{ \nonumber \\ & & }
+\def\roweq{\nonumber \\ &=& }
+\def\rowleq{\nonumber \\  & \leq & }
+\def\rowgeq{\nonumber \\ & \geq & }
+\def\rowsm{\nonumber \\ & < & }
+\def\rowla{\nonumber \\ & > & }
+\def\rowpl{\nonumber \\ & \ \ + & }
+\def\rowmi{\nonumber \\ & \ \ - & }
+\def\rowcdot{\nonumber \\ & \cdot & }
+
+%
+% RIVINVAIHTO KAAVASSA BEAL/EeAL
+
+%
+% \def\ril{ \\ &  }
+\def\rileq{ \\ &= }
+\def\rilleq{ \\  & \leq  }
+\def\rilgeq{\\ & \geq  }
+\def\rilsm{ \\ & <  }
+\def\rilla{ \\ & >  }
+\def\rilpl{ \\ & +  }
+\def\rilmi{ \\ & -  }
+\def\rilcdot{\\ & \cdot  }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        
+%  FONTTIEN LYHENTEET:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bfa{{\bf a}}
+\def\bfb{{\bf b}}
+\def\bfc{{\bf c}}
+\def\bfd{{\bf d}}
+\def\bfe{{\bf e}}
+\def\bff{{\bf f}}
+\def\bfg{{\bf g}}
+\def\bfh{{\bf h}}
+\def\bfi{{\bf i}}
+\def\bfj{{\bf j}}
+\def\bfk{{\bf k}}
+\def\bfl{{\bf l}}
+\def\bfm{{\bf m}}
+\def\bfn{{\bf n}}
+\def\bfo{{\bf o}}
+\def\bfp{{\bf p}}
+\def\bfq{{\bf q}}
+\def\bfr{{\bf r}}
+\def\bfs{{\bf s}}
+\def\bft{{\bf t}}
+\def\bfu{{\bf u}}
+\def\bfv{{\bf v}}
+\def\bfw{{\bf w}}
+\def\bfx{{\bf x}}
+\def\bfy{{\bf y}}
+\def\bfz{{\bf z}}
+
+\def\bfA{{\bf A}}
+\def\bfB{{\bf B}}
+\def\bfC{{\bf C}}
+\def\bfD{{\bf D}}
+\def\bfE{{\bf E}}
+\def\bfF{{\bf F}}
+\def\bfG{{\bf G}}
+\def\bfH{{\bf H}}
+\def\bfI{{\bf I}}
+\def\bfJ{{\bf J}}
+\def\bfK{{\bf K}}
+\def\bfL{{\bf L}}
+\def\bfM{{\bf M}}
+\def\bfN{{\bf N}}
+\def\bfO{{\bf O}}
+\def\bfP{{\bf P}}
+\def\bfQ{{\bf Q}}
+\def\bfR{{\bf R}}
+\def\bfS{{\bf S}}
+\def\bfT{{\bf T}}
+\def\bfU{{\bf U}}
+\def\bfV{{\bf V}}
+\def\bfW{{\bf W}}
+\def\bfX{{\bf X}}
+\def\bfY{{\bf Y}}
+\def\bfZ{{\bf Z}}
+
+
+
+
+
+
+
+\def\bbA{{\mathbb A}}
+\def\bbB{{\mathbb B}}
+\def\bbC{{\mathbb C}}
+\def\bbD{{\mathbb D}}
+\def\bbE{{\mathbb E}}
+\def\bbF{{\mathbb F}}
+\def\bbG{{\mathbb G}}
+\def\bbH{{\mathbb H}}
+\def\bbI{{\mathbb I}}
+\def\bbJ{{\mathbb J}}
+\def\bbK{{\mathbb K}}
+\def\bbL{{\mathbb L}}
+\def\bbM{{\mathbb M}}
+\def\bbN{{\mathbb N}}
+\def\bbO{{\mathbb O}}
+\def\bbP{{\mathbb P}}
+\def\bbQ{{\mathbb Q}}
+\def\bbR{{\mathbb R}}
+\def\bbS{{\mathbb S}}
+\def\bbT{{\mathbb T}}
+\def\bbU{{\mathbb U}}
+\def\bbV{{\mathbb V}}
+\def\bbW{{\mathbb W}}
+\def\bbX{{\mathbb X}}
+\def\bbY{{\mathbb Y}}
+\def\bbZ{{\mathbb Z}}
+
+
+
+\def\cA{{\mathcal A}}
+\def\cB{{\mathcal B}}
+\def\cC{{\mathcal C}}
+\def\cD{{\mathcal D}}
+\def\cE{{\mathcal E}}
+\def\cF{{\mathcal F}}
+\def\cG{{\mathcal G}}
+\def\cH{{\mathcal H}}
+\def\cI{{\mathcal I}}
+\def\cJ{{\mathcal J}}
+\def\cK{{\mathcal K}}
+\def\cL{{\mathcal L}}
+\def\cM{{\mathcal M}}
+\def\cN{{\mathcal N}}
+\def\cO{{\mathcal O}}
+\def\cP{{\mathcal P}}
+\def\cQ{{\mathcal Q}}
+\def\cR{{\mathcal R}}
+\def\cS{{\mathcal S}}
+\def\cT{{\mathcal T}}
+\def\cU{{\mathcal U}}
+\def\cV{{\mathcal V}}
+\def\cW{{\mathcal W}}
+\def\cX{{\mathcal X}}
+\def\cY{{\mathcal Y}}
+\def\cZ{{\mathcal Z}}
+
+
+\def\mfA{{\mathfrak A}}
+\def\mfB{{\mathfrak B}}
+\def\mfC{{\mathfrak C}}
+\def\mfD{{\mathfrak D}}
+\def\mfE{{\mathfrak E}}
+\def\mfF{{\mathfrak F}}
+\def\mfG{{\mathfrak G}}
+\def\mfH{{\mathfrak H}}
+\def\mfI{{\mathfrak I}}
+\def\mfJ{{\mathfrak J}}
+\def\mfK{{\mathfrak K}}
+\def\mfL{{\mathfrak L}}
+\def\mfM{{\mathfrak M}}
+\def\mfN{{\mathfrak N}}
+\def\mfO{{\mathfrak O}}
+\def\mfP{{\mathfrak P}}
+\def\mfQ{{\mathfrak Q}}
+\def\mfR{{\mathfrak R}}
+\def\mfS{{\mathfrak S}}
+\def\mfT{{\mathfrak T}}
+\def\mfU{{\mathfrak U}}
+\def\mfV{{\mathfrak V}}
+\def\mfW{{\mathfrak W}}
+\def\mfX{{\mathfrak X}}
+\def\mfY{{\mathfrak Y}}
+\def\mfZ{{\mathfrak Z}}
+
+
+\def\of{\frac14}
+\def\hf{\frac12}
+\def\ov{\overline}
+
+\newcommand{\mes}{\mathop{\rm meas}\nolimits}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\diag}{\mathop{\rm diag}\nolimits}
+\renewcommand{\Re}{\mathop{\rm Re}\nolimits}
+\newcommand{\diam}{\mathop{\rm diam}\nolimits}
+\newcommand{\dist}{\mathop{\rm dist}\nolimits}
+\newcommand{\grad}{\mathop{\rm grad}\nolimits}
+\newcommand{\Id}{\mathop{\rm Id}\nolimits}
+
+\newcommand{\supp}{\mathop{\rm supp}\nolimits}
+\newcommand{\capas}{\mathop{\rm cap}\nolimits}
+\newcommand{\Endproof}{\hfill$\Box$}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\vt}{\vartheta}
+\newcommand{\vph}{\varphi}
+\newcommand{\ora}{\overrightarrow}
+\newcommand{\kp}{\kappa}
+\newcommand{\vkp}{\varkappa}
+\newcommand{\df}{\partial}

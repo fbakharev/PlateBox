@@ -1,0 +1,130 @@
+\section{Задача Дирихле}
+\subsection{Увеличение полосы: случай ($H_\pm\geq 0$)}
+\begin{theorem}
+\label{Th1}
+Если функции $H_\pm$ неотрицательны и не обе нулевые, то при любом $\ve>0$ дискретный спектр $\sigma_{di}(\cA_D^\ve)$ содержит хотя бы одно собственное число $\lambda_1^\ve\in(0,\lambda_\dagger^D)$.
+\end{theorem}
+
+\begin{proof}
+Согласно [BiSo;\S10.2] достаточно построить функцию $W\in H^2_{00}(\Pi_\ve)$, удовлетворяющую неравенству
+\beq
+\label{B1}
+a(W,W;\Pi_\ve)-\lambda_\dagger^D \|W;L_2(\Pi_\ve)\|^2<0.
+\eeq
+Определим функцию $W_\delta$, зависящую от малого параметра $\delta>0$, формулой
+\beq
+\label{B2}
+W_\delta(x)=
+\left\{
+\begin{array}{ll}
+e^{-\delta(|y|-\ell)^2}U_\dagger^D(z) \quad & \mbox{при} \quad x\in \Pi_\pm:=\{\pm y>\ell, |z|<1/2\}\\
+U_\dagger^D(z)+\delta \psi(x) \quad & \mbox{при} \quad x\in\Pi_\square:=\{|y|\leq \ell, |z|\leq 1/2\}\\
+\delta \psi(x) \quad & \mbox{при} \quad x\in \Pi_\ve\setminus \Pi_0
+\end{array}
+\right.,
+\eeq
+где $\psi$ --- такая гладкая функция, что $\supp \psi\subset \Pi_\ve\cap\{|y|<\ell\}$. Построенная функция $W_\delta$ экспоненциально затухает на бесконечности и является кусочно гладкой, нетрудно видеть, что $w_\delta\in H^2_{00}(\Pi_\ve)$. Подставим выражение \eqref{B2} в неравенство \eqref{B1} и вычислим нормы
+\begin{eqnarray*}
+&&a(W_\delta,W_\delta; \Pi_\pm)-\lambda_\dagger^D\|W_\delta;L_2(\Pi_\pm)\|^2=O(\delta^2),\\
+&&a(W_\delta,W_\delta; \Pi_\bullet)-\lambda_\dagger^D\|W_\delta;L_2(\Pi_\bullet)\|^2=2\delta F(\psi)+O(\delta^2),
+\end{eqnarray*}
+где выражение 
+$$
+F(\psi)=a(U_\dagger^D,\psi;\Pi_\bullet)- \lambda_\dagger^D (U_\dagger^D,\psi)_{\Pi_\bullet}=-(\df_z^2U_\dagger^D,\df_z \psi)_{\Upsilon}+(\df_z^3 U_\dagger^D,\psi)_{\Upsilon},
+$$
+а $\Upsilon= \df \Pi_0\cap \{|y|\leq \ell\}$, может быть сделано отрицательным подходящим выбором $\psi$. Таким образом, неравенство \eqref{B1} выполняется при достаточно малом положительном $\delta$.
+\end{proof}
+
+\begin{remark} В проведенном рассуждении не требуется гладкости функций $H_\pm$.
+\end{remark}
+\begin{remark}
+Рассуждение не работает в случае краевых условий \eqref{A5} ввиду невозможности продолжения функции класса $H^2_0(\Pi_0)$ нулем вне полосы с сохранением необходимой гладкости.
+\end{remark}
+
+\subsection{Уменьшение полосы: $H_-+H_+\leq 0$}
+\begin{theorem}
+\label{Th2}
+Если функции $H_\pm$ таковы, что $H_-+H_+\leq 0$, то при любом $\ve>0$, при котором множество $\Pi_\ve$, определенное формулой \eqref{A2} остается областью, дискретный спектр $\sigma_{di}(\cA^\ve_D)$ пуст. Утверждение остается верным и для оператора $\cA^\ve_M$.
+\end{theorem}
+
+\begin{proof}
+Утверждение теоремы является простым следствием неравенства Фридрихса на вертикальном сечении.
+\end{proof}
+
+\subsection{Приращение объема: $\int H_-+H_+>0$}
+\begin{theorem}
+Если гладкие функции $H_\pm$ удовлетворяют неравенству 
+\beq
+\label{B3}
+\int_{-\ell}^\ell H_-(y)+H_+(y)\,dy>0,
+\eeq
+то существует такое $\ve_0>0$, что для любого $\ve\in (0,\ve_0)$ у оператора $\cA_\ve^D$ есть хотя бы одно собственное число на интервале $(0,\lambda_\dagger^D)$.
+\end{theorem}
+
+Для доказательства этого утверждения применяем асимптотический анализ. Примем следующие асимптотические анзацы для собственной функции и собственного числа
+$$
+\cU(x)=U_\dagger^D(z)+\ve U'(y,z)+\ldots 
+$$
+в окрестности искривленной части,
+$$
+\cU(x)=(1+A\ve+\ldots)U_\dagger^D(z)e^{\mp\sqrt{\lambda_\dagger -\lambda}y}+\ldots
+$$
+при $y\to\pm \infty$
+и 
+$$
+\lambda=\lambda_\dagger^D -\mu^D\ve^2+\ldots,
+$$
+и применим метод сращиваемых асимптотических разложений.
+
+Для начала запишем задачу, решением которой является функция $U'$. Внешняя нормаль $n$ к полосе $\Pi_\ve$ имеет вид
+$$
+n=\frac{1}{\sqrt{1+\ve^2 (\df_y H_\pm)^2}}(-\ve \df_y H_\pm(y), \pm 1)
+$$
+на $\Gamma_\ve^\pm$, поэтому оператор дифференцирования вдоль $n$ расщепляется в сумму
+$$
+\df_n= \frac{1}{\sqrt{1+\ve^2 (\df_y H_\pm)^2}} (\pm \df_z - \ve \df_yH_\pm(y)\df_y)= \pm\df_z -\ve \df_y H_\pm(y) \df_y+O(\ve^2).
+$$
+Функция $U'$ компенсирует невязку функции $U_\dagger^D$ в краевом условии,
+которая находится из формулы Тейлора:
+$$
+U_\dagger^D(z)=O(\ve^2),\quad  
+\df_n U_\dagger^D(z) = \ve H_\pm(y)\df_z^2U_\dagger^D(\pm1/2) + O(\ve^2)
+$$
+при $z=\pm\frac{1}{2}\pm H_{\pm}(y)$. Следовательно, $U'$ является решением задачи 
+\begin{eqnarray*}
+&&\Delta^2 U'(y,z)= \lambda_\dagger^D U'(y,z) \quad x\in \Pi_0\\
+&&U'(y,\pm 1/2)=0\quad  x\in \df\Pi_0\\
+&&\df_n U'(y,\pm 1/2) = -H_\pm(y) \df_z^2 U_\dagger^D(\pm 1/2) \quad x\in \Gamma_0^\pm.
+\end{eqnarray*}
+Решение этой задачи следует искать с заданной асимптотикой на бесконечности:
+$$
+U'(y,z)=a_0^\pm U_\dagger^D(z) + a_1^\pm y U_\dagger^D(z) + \widetilde{U}(y,z),\quad y\to \pm \infty,
+$$
+где слагаемое $\widetilde{U}$ является экспоненциально затухающим. Условием разрешимости при этом является связь на коэффициенты $a_0^\pm$, $a_1^\pm$, выражающая условия излучения, вывод которой основан на применении формулы Грина. В усеченной полосе $\Pi_0^R=\{x\in \Pi_0\colon y\in(-R,R)\}$ запишем формулу Грина для бигармонического оператора, примененную к паре функций $U'$ и $U_\dagger^D$
+\begin{multline*}
+0=\sum_{\pm}\Big((\df_n\Delta U',U_\dagger^D)_{\gamma_R^\pm}-(\Delta U',\df_n U_\dagger^D)_{\gamma_R^\pm}+(\df_n U',\Delta U_\dagger^D)_{\gamma_R^\pm}-(U',\df_n \Delta U_\dagger^D)_{\gamma_R^\pm}\Big) + \\
++(\df_n U',\Delta U)_\Upsilon=2(a_1^+-a_1^-)\int_{-1/2}^{1/2}|\df_z U_\dagger^D(z)|^2\,dz + 2|\df_z^2 U_\dagger^D(1/2)|^2 \int_{-\ell}^\ell H_-(y)+H_+(y)\, dy.
+\end{multline*}
+Отметим, что условие \eqref{B3} гарантирует, что $a_1^+-a_1^-<0$.
+Аналогичная подстановка функций $U'$ и $yU_\dagger^D$ приводит к равенству
+$$
+0=-2(a_0^+-a_0^-)- 2|\df_z^2 U_\dagger^D(1/2)|^2\int_{-\ell}^{\ell}(H_-(y)+H_{+}(y))y\,dy,
+$$
+которое в силу соотношения \eqref{A2.1} сводится к равенству $a_0^-=a_0^+$.
+
+Проведенный анализ позволяет выбрать функцию $U'$ так, чтобы $a_0^-=a_0^+=0$ и
+$$
+a:=a_1^-=-a_1^+=\frac{|\df_z^2 U_\dagger^D(1/2)|^2}{2\|\df_z U_\dagger^D;L_2(-1/2,1/2)\|^2}\int_{-\ell}^\ell H_-(y)+H_+(y)\, dy>0.
+$$
+
+Теперь надо произвести сращивание асимптотики функции $U_\dagger^D+\ve U'$
+на бесконечности с асимптотическим разложением
+$$
+(1+A\ve+\ldots)U_\dagger^D(z)e^{\mp \sqrt{\lambda_\dagger-\lambda} y}=U_\dagger^D(z)(1+\ve(A\mp \sqrt{\mu_D}y)),
+$$
+что можно осуществить, положив $A=0$ и $\sqrt{\mu_D}=a$.
+
+
+
+
+

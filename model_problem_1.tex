@@ -1,0 +1,27 @@
+\subsection{Модельное решение в полуплоскости с уступом}
+
+В области 
+\beq
+\label{D1}
+\Xi_+=\{\xi\colon \xi_1<0, \xi_2>0 \}\cup\{\xi\colon \xi_2>1\}
+\eeq
+рассмотрим решение краевой задачи
+\begin{eqnarray}
+\label{D2}
+&&\Delta^2 Z(\xi)=0, \quad \xi\in \Xi_+,\\
+\label{D3}
+&&Z(\xi)=\df_n Z(\Xi)=0, \quad \xi\in \df\Xi_+,
+\end{eqnarray}
+обладающее асимптотикой
+$$
+Z(\xi)\sim \rho \ln\rho \sin\varphi \quad \mbox{при} \quad \rho=|\xi|\to \infty.
+$$
+Такое решение существует и имеет вид 
+$$
+Z(\xi)\sim \rho\ln \rho \sin\varphi+ K_{\Xi}\rho \sin\vph+\frac{\pi-\vph}{\pi}-K_{\Xi}\frac{\pi-\vph}{\pi} \quad \mbox{при} \quad \rho\to \infty
+$$
+где второе слагаемое появляется согласно общей теории, а третье и четвертое слагаемые компенсируют невязку в краевом условии.
+
+\begin{remark}
+Второе, третье и четвертое слагаемые лежат в энергетическом классе. Энергетическое пространство --- замыкание $C_0^\infty$ по норме $\|\nabla_\xi^2 u;L_2(\Xi)\|$.
+\end{remark}

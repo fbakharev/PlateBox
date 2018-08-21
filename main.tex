@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\def\@typesizes{%
+       \or{5}{6.5}\or{6}{7.5}\or{7}{8.5}\or{8}{11}\or{9}{12}%
+       \or{10}{13}% normalsize
+       \or{\@xipt}{14}\or{\@xiipt}{15}\or{\@xivpt}{18}%
+       \or{\@xviipt}{20}\or{\@xxpt}{24}}
+
+\usepackage{refcheck}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumerate}
+%\usepackage{wrapfig}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\setlength{\textheight}{23.8cm}
+\setlength{\textwidth}{15cm}
+\hoffset= -1cm
+\topmargin=-1.5cm
+
+\input commands.tex
+
+
+\begin{document}
+
+Тест тест тест
+
+\input 01-introduction.tex
+
+\input 02-description.tex
+
+\input 03-Dirichlet.tex
+
+\newpage
+
+\section{Задача с уступом}
+
+\input model_problem_1.tex
+
+\input model_problem_2.tex
+
+\end{document}
